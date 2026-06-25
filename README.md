@@ -1,5 +1,5 @@
 # Задание 3 - Telegram-бот «Аналитик данных»
-
+Ссылка на моего бота: https://t.me/DVFU_LLM_Analitic_bot
 ## Описание задания
 Telegram-бот, который анализирует таблицы с помощью LLM-агента. Пользователь
 присылает файл (CSV/TSV/Excel), при желании добавляет к нему инструкцию (на
@@ -62,7 +62,7 @@ Telegram-интерфейс на aiogram.
    ```
    pip install -r requirements.txt
    ```
-Создать файл `.env` (пример `.env.example`) и вписать токен бота от @BotFather
+Создать файл `.env` (пример `.env.example`) и вписать токен бота от телеграм-бота @BotFather
 и ключ OpenRouter (получить на https://openrouter.ai/keys):
 
    ```

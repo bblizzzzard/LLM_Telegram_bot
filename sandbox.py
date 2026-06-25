@@ -46,12 +46,17 @@ class CodeInterpreter:
 
         #Минимальное окружение: только PATH/локаль/HOME и бэкенд matplotlib.
         #Секреты (OPENROUTER_API_KEY, TELEGRAM_BOT_TOKEN) в подпроцесс НЕ идут.
+
         env = {
             "PATH": os.environ.get("PATH", ""),
             "MPLBACKEND": "Agg",
             "HOME": self.session_dir,
             "LANG": "C.UTF-8",
             "LC_ALL": "C.UTF-8",
+            "OMP_NUM_THREADS": "1",
+            "OPENBLAS_NUM_THREADS": "1",
+            "MKL_NUM_THREADS": "1",
+            "NUMEXPR_NUM_THREADS": "1",
         }
 
         try:
